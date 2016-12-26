@@ -63,7 +63,7 @@ $(function () {
                 url: environment.saveUrl,
                 dataType: 'json',
                 cache: false,
-                data: $('.card-save-form form').serialize()
+                data: $('.card-save-form form').serialize() + resume
             }).done(function (msg) {
                 if (msg.success) {
                     window.location = msg.redirect;
