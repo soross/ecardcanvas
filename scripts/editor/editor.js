@@ -108,15 +108,11 @@ $(function () {
         var hash = window.location.hash;
         var restore = (hash == "#edit" || hash == "#save");
       //  if (restore && localStorage['card'] != null) {
-        //    var localConfig = JSON.parse(localStorage['card']);
-         //   if (localConfig.length > 0) {
-         //       cardConfig = localConfig;
-         //   }
-        if (@resume.desc != null) {
-            var localConfig = JSON.parse(@resume.desc);
-            if (localConfig.length > 0) {
-               cardConfig = localConfig;
-            }
+       //     var localConfig = JSON.parse(localStorage['card']);
+      //      if (localConfig.length > 0) {
+      //          cardConfig = localConfig;
+       //     }
+
         }
 
         // we add this to the end of url so if user reloads it we load it from local storage
