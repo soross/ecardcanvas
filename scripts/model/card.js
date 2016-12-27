@@ -194,7 +194,7 @@
         for (var i = 0; i < this.items.length; ++i) {
             cardConfig[cardConfig.length] = this.items[i].getConfig();
         }
-        return JSON.stringify(cardConfig);
+        return cardConfig;
     },
     getDescription: function () {
         var desc = "";
