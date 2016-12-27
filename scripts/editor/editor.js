@@ -108,10 +108,10 @@ $(function () {
         var hash = window.location.hash;
         var restore = (hash == "#edit" || hash == "#save");
         if (restore && localStorage['card'] != null) {
-            var localConfig = JSON.parse(localStorage['card']);
-            if (localConfig.length > 0) {
-                cardConfig = localConfig;
-            }
+           // var localConfig = JSON.parse(localStorage['card']);
+           // if (localConfig.length > 0) {
+               // cardConfig = localConfig;
+          //  }
 
         }
 
