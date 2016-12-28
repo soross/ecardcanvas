@@ -107,11 +107,11 @@ $(function () {
         // If this is a reload try to load card config from local storage
         var hash = window.location.hash;
         var restore = (hash == "#edit" || hash == "#save");
-        if (restore && localStorage['card'] != null) {
-           // var localConfig = JSON.parse(localStorage['card']);
-           // if (localConfig.length > 0) {
-               // cardConfig = localConfig;
-          //  }
+        if (restore && resumex != null) {
+            var localConfig = JSON.parse(resumex);
+            if (localConfig.length > 0) {
+                cardConfig = localConfig;
+            }
 
         }
 
