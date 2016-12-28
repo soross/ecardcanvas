@@ -109,7 +109,7 @@ $(function () {
     jQuery.getJSON(url, 
     function(data) {
 	
-      cardConfig = JSON.parse(data.desc);
+      cardConfig = JSON.stringify(data.desc);
      
     
     })
