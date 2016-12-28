@@ -103,7 +103,18 @@ $(function () {
     }
 
     function initilize() {
-        var cardConfig = resumex;
+	    var cardConfig; 
+    var url = 'https://ogre-jiachen.c9users.io/resume/' + resume + '/json';
+    
+    jQuery.getJSON(url, 
+    function(data) {
+	
+      cardConfig = data.desc;
+     
+    
+    })
+	    
+        
         // If this is a reload try to load card config from local storage
         var hash = window.location.hash;
         var restore = (hash == "#edit" || hash == "#save");
