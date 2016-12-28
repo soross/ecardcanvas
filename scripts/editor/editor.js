@@ -103,20 +103,14 @@ $(function () {
     }
 
     function initilize() {
-	    
-	    alert("data is : 77");
-	    
-    var url = 'https://ogre-jiachen.c9users.io/resume/146/json';
-    
-    jQuery.getJSON(url, 
-    function(data) {
-	
-    var cardConfig  cardConfig = data.desc;
+        var cardConfig = environment.cardConfig;
+
      
-    alert("data is : " + cardConfig);
-    })
-	    
-        alert("data is : 88999");
+
+     
+         alert("data is : " + resumex);
+    
+
         // If this is a reload try to load card config from local storage
         var hash = window.location.hash;
         var restore = (hash == "#edit" || hash == "#save");
@@ -167,5 +161,7 @@ $(function () {
         card.setWidth($(this).width());
     });
 
-    initilize();
+
+       initilize();
+
 });
