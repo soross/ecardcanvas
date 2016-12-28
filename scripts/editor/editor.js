@@ -104,7 +104,7 @@ $(function () {
 
     function initilize() {
 	    var cardConfig; 
-    var url = 'https://ogre-jiachen.c9users.io/resume/' + resume + '/json';
+    var url = 'https://ogre-jiachen.c9users.io/resume/146/json';
     
     jQuery.getJSON(url, 
     function(data) {
