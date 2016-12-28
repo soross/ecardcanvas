@@ -103,6 +103,8 @@ $(function () {
     }
 
     function initilize() {
+	    
+	    alert("data is : 77");
 	    var cardConfig; 
     var url = 'https://ogre-jiachen.c9users.io/resume/146/json';
     
@@ -114,7 +116,7 @@ $(function () {
     alert("data is : " + cardConfig);
     })
 	    
-        
+        alert("data is : 88");
         // If this is a reload try to load card config from local storage
         var hash = window.location.hash;
         var restore = (hash == "#edit" || hash == "#save");
