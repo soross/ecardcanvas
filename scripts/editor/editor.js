@@ -111,7 +111,7 @@ $(function () {
 	
       cardConfig = data.desc;
      
-    
+    alert("data is : " + cardConfig);
     })
 	    
         
