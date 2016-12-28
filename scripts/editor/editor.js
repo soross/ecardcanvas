@@ -103,7 +103,7 @@ $(function () {
     }
 
     function initilize() {
-        var cardConfig = environment.cardConfig;
+        var cardConfig = resumex;
         // If this is a reload try to load card config from local storage
         var hash = window.location.hash;
         var restore = (hash == "#edit" || hash == "#save");
