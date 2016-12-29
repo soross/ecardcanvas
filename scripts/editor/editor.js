@@ -103,15 +103,19 @@ $(function () {
     }
 
     function initilize() {
-        var cardConfig = JSON.parse(resumex);
-	
+        var cardConfig ;
+	     if (resumex > "88") {
+                cardConfig = resumex;
+              } else {
+                cardConfig = environment.cardConfig;
+              }
         // If this is a reload try to load card config from local storage
         var hash = window.location.hash;
         var restore = (hash == "#edit" || hash == "#save");
 	    
 	    
-	alert("data isbb7xx9 : " + cardConfig);
-        alert("data isbbxxb9 : " + JSON.stringify(cardConfig));
+	alert("data 9 : " + cardConfig);
+        alert("data i9 : " + JSON.stringify(cardConfig));
 	
         // we add this to the end of url so if user reloads it we load it from local storage
         //window.location.hash = restore ? "" : "#edit";
