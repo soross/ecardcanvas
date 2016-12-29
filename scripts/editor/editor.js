@@ -103,7 +103,7 @@ $(function () {
     }
 
     function initilize() {
-        var cardConfig = resumex;
+        var cardConfig = JSON.parse(resumex);
         // If this is a reload try to load card config from local storage
         var hash = window.location.hash;
         var restore = (hash == "#edit" || hash == "#save");
