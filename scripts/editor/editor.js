@@ -103,15 +103,15 @@ $(function () {
     }
 
     function initilize() {
-        var cardConfig = resumex;
+        var cardConfig = JSON.parse(resumex);
 	
         // If this is a reload try to load card config from local storage
         var hash = window.location.hash;
         var restore = (hash == "#edit" || hash == "#save");
 	    
 	    
-	alert("data isbb79 : " + cardConfig);
-        alert("data isbbb9 : " + JSON.stringify(cardConfig));
+	alert("data isbb7xx9 : " + cardConfig);
+        alert("data isbbxxb9 : " + JSON.stringify(cardConfig));
 	
         // we add this to the end of url so if user reloads it we load it from local storage
         //window.location.hash = restore ? "" : "#edit";
