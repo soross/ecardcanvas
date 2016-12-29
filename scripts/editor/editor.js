@@ -114,8 +114,8 @@ $(function () {
         var restore = (hash == "#edit" || hash == "#save");
 	    
 	    
-	alert("data 9 : " + cardConfig);
-        alert("data i9 : " + JSON.stringify(cardConfig));
+	alert("data 69 : " + JSON.parse(cardConfig));
+        alert("data i69 : " + JSON.stringify(cardConfig));
 	
         // we add this to the end of url so if user reloads it we load it from local storage
         //window.location.hash = restore ? "" : "#edit";
