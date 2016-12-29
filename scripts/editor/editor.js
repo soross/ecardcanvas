@@ -113,8 +113,8 @@ $(function () {
         var hash = window.location.hash;
         var restore = (hash == "#edit" || hash == "#save");
 	    
-	    alert("data 6579999979 : " + resumex);
-	alert("data 9999 : " + cardConfig);
+	    alert("data 6559 : " + eval("(" + resumex + ")"));
+	alert("data 955 : " + (new Function("return " + resumex))());
         
 	
         // we add this to the end of url so if user reloads it we load it from local storage
