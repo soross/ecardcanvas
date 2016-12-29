@@ -105,7 +105,7 @@ $(function () {
     function initilize() {
         var cardConfig ;
 	     if (resumex > "88") {
-                cardConfig = resumex;
+                cardConfig = JSON.parse(resumex);
               } else {
                 cardConfig = environment.cardConfig;
               }
@@ -114,8 +114,8 @@ $(function () {
         var restore = (hash == "#edit" || hash == "#save");
 	    
 	    
-	alert("data 69 : " + JSON.parse(cardConfig));
-        alert("data i69 : " + JSON.stringify(cardConfig));
+	alert("data 659 : " + cardConfig);
+        
 	
         // we add this to the end of url so if user reloads it we load it from local storage
         //window.location.hash = restore ? "" : "#edit";
