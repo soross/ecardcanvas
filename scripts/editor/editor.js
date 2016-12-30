@@ -103,12 +103,20 @@ $(function () {
     }
 
     function initilize() {
-        var cardConfig = [] ;
-	     JSON.pParse = function( tar ) {    if( typeof( tar ) === 'string' ) {        return JSON.parse( tar );    } else {        return tar;    }};
-
+        var cardConfig ;  
 	    
+
 	     if (resumex > "") {
-                cardConfig =   JSON.pParse(resumex); 
+                cardConfig =   	    JSON.parse(resumex, function (key, value) {
+    var type;
+    if (value && typeof value === 'object') {
+        type = value.type;
+        if (typeof type === 'string' && typeof window[type] === 'function') {
+            return new (window[type])(value);
+        }
+    }
+    return value;
+});
               } else {
                 cardConfig = environment.cardConfig;
               }
