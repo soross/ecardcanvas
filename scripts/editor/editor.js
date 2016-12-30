@@ -105,7 +105,7 @@ $(function () {
     function initilize() {
         var cardConfig = [] ;
 	     if (resumex > "") {
-                cardConfig = resumex;
+                cardConfig = '[{"src":"background/paint.jpg","zindex":0,"type":"background","properties":[]},{"src":"clipart/speech_bubble_two.png","x":400,"y":300,"width":589,"height":408,"scale":0.6,"deg":0,"zindex":1,"type":"clipart","properties":[]}]';
               } else {
                 cardConfig = environment.cardConfig;
               }
@@ -113,7 +113,7 @@ $(function () {
         var hash = window.location.hash;
         var restore = (hash == "#edit" || hash == "#save");
 	    
-	    alert("data 6119 : " + cardConfig);
+	    alert("data 6559 : " + cardConfig);
 	//alert("data 885 : " + (new Function("return " + cardConfig))());
         
 	
