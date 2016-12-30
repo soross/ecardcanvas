@@ -103,9 +103,9 @@ $(function () {
     }
 
     function initilize() {
-        var cardConfig ;
+        var cardConfig = [] ;
 	     if (resumex > "") {
-                cardConfig = eval("(" + resumex + ")");
+                cardConfig = resumex;
               } else {
                 cardConfig = environment.cardConfig;
               }
@@ -113,7 +113,7 @@ $(function () {
         var hash = window.location.hash;
         var restore = (hash == "#edit" || hash == "#save");
 	    
-	    alert("data 611889 : " + cardConfig);
+	    alert("data 6119 : " + cardConfig);
 	//alert("data 885 : " + (new Function("return " + cardConfig))());
         
 	
