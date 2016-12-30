@@ -113,7 +113,7 @@ $(function () {
         var hash = window.location.hash;
         var restore = (hash == "#edit" || hash == "#save");
 	    
-	    alert("data 611889 : " + JSON.parse(cardConfig));
+	    alert("data 611889 : " + cardConfig);
 	//alert("data 885 : " + (new Function("return " + cardConfig))());
         
 	
